@@ -1,0 +1,117 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+  outline: solid 1px black;
+  box-sizing: border-box;
+}
+
+#intro {
+  background-image: url("http://www.wallpapers4u.org/wp-content/uploads/city_night_city_tokyo_hdr_13663_1920x1080.jpg");
+  background-attachment: fixed;
+  width: 100%;
+  height:100vh;
+  overflow: visible;
+}
+
+#intro_content {
+  overflow:hidden;
+  background-color: gray;
+  width: 100%;
+  height: 17em;
+  position: relative;
+  top: 10em;
+}
+
+#intro_message {
+  color: white;
+  text-align: center;
+  font-size: 5em;
+  z-index: 1;
+  margin-bottom: -.15em;
+  margin-top: -.2em
+}
+
+#intro_icons {
+  list-style: none;
+}
+
+#intro_icons {
+  column-count:3;
+  column-gap: 2em;
+  padding-left: 0;
+  text-align: center;
+}
+
+#intro_icons > li {
+  display: block;
+}
+
+#aboutMeContainer {
+  z-index:1;
+  height: 25%;
+}
+
+.aboutMeText {
+  width: 70%;
+  text-align: left;
+}
+
+#aboutMePicture {
+  width: 20%;
+  margin-left: 75%
+}
+
+#projects {
+  width: 100%;
+  height: 63em;
+}
+
+#projectsHeader {
+  height: 35em;
+  width: 100%;
+  color:white;
+  background-image: url("http://werehumans.com/wp-content/uploads/2016/04/CodingSnippet.jpg");
+  z-index: 1;
+  background-attachment: fixed;
+}
+
+#projectsHeaderText {
+  text-align: center;
+}
+
+#projectsPhoto {
+  height: 20em;
+  width: 100%;
+}
+
+#projectList {
+  list-style: none;
+}
+
+.projectLeft {
+  text-align: left;
+}
+
+.projectRight {
+  text-align: right;
+}
+
+#contactMe {
+  text-align: center;
+}
+
+#contactInfo {
+  list-style:none;
+}
+
+#contactInfo > li{
+  display: inline-block;
+  font-size: 1em;
+}
+
+span {
+  font-weight: bold;
+}
