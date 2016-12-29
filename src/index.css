@@ -50,6 +50,7 @@ html,body {
 }
 
 #aboutMeContainer {
+    background-color: gray;
   z-index:1;
   height: 25%;
 }

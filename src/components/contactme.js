@@ -13,6 +13,7 @@ export default class ContactMe extends Component {
 					<ul id="contactInfo">
 						<li className="contactText"><span>Telephone#:</span> (562)818-7214</li>
 						<li className="contactText"><span>Email:</span> jovincent.ruiz@gmail.com</li>
+						<li> still need to find logos for facebook,linkedin,github</li>
 					</ul>
 				</div>
 			</div>
