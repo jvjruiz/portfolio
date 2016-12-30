@@ -4,8 +4,8 @@ export default class Intro extends Component {
 	render() {
 		return (
 			<div id="intro" >
-				<div id="intro_content">
-					<p id="intro_message">Nice to meet you, I'm Jo Vincent</p>
+				<div id="intro_content" className="content">
+					<p id="intro_message" className="headerText">Nice to meet you, I'm Jo Vincent</p>
 					<ul id="intro_icons">
 						<li className="intro_icon">
 							Builder				

@@ -4,8 +4,22 @@ html,body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
-  outline: solid 1px black;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #FBFBFF;
+}
+
+ul {
+    list-style: none
+}
+
+.content {
+    color: #1E1E1E;
+    background-color: #FBFBFF;
+}
+
+.headerText {
+    color: #FF331F;
+    margin-top:0;
 }
 
 #intro {
@@ -17,22 +31,19 @@ html,body {
 }
 
 #intro_content {
-  outline: 1px solid black;
   overflow:hidden;
-  background-color: gray;
   width: 100%;
   height: 17em;
   position: relative;
   top: 30%;
+  background-color: #1E1E1E;
 }
 
 #intro_message {
-  color: white;
   text-align: center;
   font-size: 5em;
   z-index: 1;
   margin-bottom: -.15em;
-  margin-top: -.2em
 }
 
 #intro_icons {
@@ -51,14 +62,8 @@ html,body {
 }
 
 #aboutMeContainer {
-  outline: 1px solid black;
-    background-color: gray;
   z-index:1;
   height: 25%;
-}
-
-#aboutMeHeader {
-    color:red;
 }
 
 .aboutMeText {
@@ -86,11 +91,36 @@ html,body {
   background-attachment: fixed;
 }
 
-#technologiesHeaderText {
+#techonologiesContent {
+    position:relative;
+    top:33%;
+    background-color: #1E1E1E;
+    max-height: 30%;
+}
+
+#technologiesHeader {
   font-size: 3em;  
   text-align: center;
   position: relative;
   top: 50%;
+  margin-top:0;
+}
+
+#languageList {
+    width: 50%;
+}
+
+#languageList > li {
+    display:inline;
+}
+
+#language {
+    column-count: 3;
+    column-gap: 3em;
+}
+
+#apiList > li {
+    display:inline;
 }
 
 #projectsHeader {
@@ -115,25 +145,23 @@ html,body {
   text-align: right;
 }
 
-.projectName {
-    color: red;
-}
-
 .project {
-    outline: 1px solid;
     width: 100%;
-    background-color: gray;
     padding-left: 0;
 }
 
-#contactMe {
-  outline: 1px solid black;
-    background-color: gray;
+#contactMe {   
+    background-color: #1E1E1E;
   text-align: center;
+}
+
+#contactHeader {
+    margin-top:0;
 }
 
 #contactInfo {
   list-style:none;
+  margin-bottom: 0px;
 }
 
 #contactInfo > li{

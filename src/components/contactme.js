@@ -3,10 +3,10 @@ import React, {Component} from 'react';
 export default class ContactMe extends Component {
 	render() {
 		return (
-			<div id="contactMe">
+			<div id="contactMe" className="content">
 				<div id="contactContent">
-					<div id="contact_header">
-						<h3>Contact Me</h3>
+					<div>
+						<h3 id="contactHeader" className="headerText">Contact Me</h3>
 					</div>
 					<div id="contactLinks">
 					</div>

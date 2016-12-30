@@ -5,10 +5,46 @@ export default class Projects extends Component {
 		return(
 			<div id="projects">
 				<div id="technologies">
-					<p id="technologiesHeaderText">Technologies Used: (insert logos of techologies under)</p>
+					<div id="techonologiesContent">
+						<p id="technologiesHeader">Technologies Used</p>
+						<div id="languages">
+							<p id="languageHeader">Languages:</p>
+							<ul id="languageList">
+								<li id="language">
+									HTML5
+								</li>
+								<li id="language">
+									CSS3
+								</li>
+								<li id="language">
+									Javascript
+								</li>
+							</ul>
+						</div>
+						<div id="api">
+							<p id="apiHeader">Frameworks/Libraries:</p>
+							<ul id="apiList">
+								<li id="api">
+									React
+								</li>
+								<li id="api">
+									Redux
+								</li>
+								<li id="api">
+									Meteor
+								</li>
+								<li id="api">
+									MongoDB
+								</li>
+								<li id="api">
+									jQuery
+								</li>
+							</ul>
+						</div>
+					</div>
 				</div>
-				<div>
-					<h1 id="projectsHeader">Projects</h1>
+				<div className="content">
+					<h1 id="projectsHeader" className="headerText">Projects</h1>
 					<ul id="projectList">
 						<li className="projectLeft project">
 							<a href="https://gameoftowers.herokuapp.com/" className="projectName">Game of Towers</a>
