@@ -17,13 +17,13 @@ ul {
     background-color: #FBFBFF;
 }
 
+#headerIntroWord {
+  color:#1E1E1E;
+}
+
 .headerText {
     color: #FF331F;
     margin-top:0;
-}
-
-#headerIntroWord {
-  color:#1E1E1E;
 }
 
 #intro {
@@ -56,33 +56,38 @@ ul {
 
 #intro_icons {
   column-count:3;
-  column-gap: 2em;
   padding-left: 0;
   text-align: center;
 }
 
 #intro_icons > li {
   display: block;
+  color: #FBFBFF;
+  font-size: 3em;
 }
 
 #aboutMeContainer {
-  z-index:1;
-  height: 25%;
+    display:block;
+    z-index:1;
 }
 
+
 .aboutMeText {
-  width: 70%;
-  text-align: left;
+  font-size: 1.3em;
+  width: 60%;
 }
 
 #aboutMePicture {
-  width: 20%;
-  margin-left: 75%
+    display:block;
+    margin-left:60%;
+    width: 25%;
+    position:relative;
+    bottom:18em;
+    left:5em;
 }
 
 #projects {
   width: 100%;
-
 }
 
 #technologies {
@@ -97,9 +102,9 @@ ul {
 
 #techonologiesContent {
     position:relative;
-    top:33%;
+    top:25%;
     background-color: #1E1E1E;
-    max-height: 30%;
+    max-height: 45%;
 }
 
 #technologiesHeader {
@@ -109,23 +114,38 @@ ul {
   position: relative;
   top: 50%;
   margin-top:0;
+  margin-bottom:0;
 }
 
 #languageList {
-    width: 50%;
+    text-align: center;
+    column-count: 3;
+    width:20%;
+    position:relative;
+    left:37%;
 }
 
 #languageList > li {
-    display:inline;
+    display:block;
 }
 
-#language {
-    column-count: 3;
-    column-gap: 3em;
+#apiList {
+    column-count: 6;
+    width:45%;
+    position:relative;
+    left: 25%;
 }
 
 #apiList > li {
-    display:inline;
+    display:block;
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    max-height: 5em;
+    max-width: 5em;
+    
 }
 
 #projectsHeader {
@@ -155,6 +175,13 @@ ul {
     padding-left: 0;
 }
 
+.projectPhoto {
+    max-height: 25%;
+    max-width: 35%;
+    height: 15em;
+    width: 35%;
+}
+
 #contactMe {   
     background-color: #1E1E1E;
   text-align: center;
@@ -175,5 +202,9 @@ ul {
 }
 
 span {
-  font-weight: bold;
+  display: block;
+}
+
+p span {
+    color: #FBFBFF;
 }

@@ -5,16 +5,16 @@ export default class Intro extends Component {
 		return (
 			<div id="intro" >
 				<div id="intro_content" className="content">
-					<p id="intro_message" className="headerText"><span className="headerIntroWord">Hi,</span> I'm Jo Vincent</p>
+					<p id="intro_message" className="headerText">Jo Vincent Ruiz</p>
 					<ul id="intro_icons">
 						<li className="intro_icon">
-							Builder				
+							Builder.				
 						</li>
 						<li className="intro_icon">
-							Communicator			
+							Communicator.			
 						</li>
 						<li className="intro_icon">
-							Implementor				
+							Implementor.				
 						</li>
 					</ul>
 				</div>
