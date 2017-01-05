@@ -22,6 +22,10 @@ ul {
     margin-top:0;
 }
 
+#headerIntroWord {
+  color:#1E1E1E;
+}
+
 #intro {
   background-image: url("http://www.wallpapers4u.org/wp-content/uploads/city_night_city_tokyo_hdr_13663_1920x1080.jpg");
   background-attachment: fixed;
@@ -99,6 +103,7 @@ ul {
 }
 
 #technologiesHeader {
+  color: #FF331F;
   font-size: 3em;  
   text-align: center;
   position: relative;

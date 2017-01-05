@@ -6,9 +6,8 @@ export default class Projects extends Component {
 			<div id="projects">
 				<div id="technologies">
 					<div id="techonologiesContent">
-						<p id="technologiesHeader">Technologies Used</p>
+						<p id="technologiesHeader">Projects</p>
 						<div id="languages">
-							<p id="languageHeader">Languages:</p>
 							<ul id="languageList">
 								<li id="language">
 									HTML5
@@ -22,7 +21,6 @@ export default class Projects extends Component {
 							</ul>
 						</div>
 						<div id="api">
-							<p id="apiHeader">Frameworks/Libraries:</p>
 							<ul id="apiList">
 								<li id="api">
 									React
@@ -44,7 +42,6 @@ export default class Projects extends Component {
 					</div>
 				</div>
 				<div className="content">
-					<h1 id="projectsHeader" className="headerText">Projects</h1>
 					<ul id="projectList">
 						<li className="projectLeft project">
 							<a href="https://gameoftowers.herokuapp.com/" className="projectName">Game of Towers</a>
