@@ -4,17 +4,24 @@ export default class Intro extends Component {
 	render() {
 		return (
 			<div id="intro" >
-				<div id="intro_content" className="content">
-					<p id="intro_message" className="headerText">Hi I'm Jo Vincent, but you can call me JR</p>
+				<div id="introContentContainer" className="content">
+					<h1 id="intro_message">
+						Hi, 
+						<br />
+						<span>I'm </span>
+						<span id="name">JR</span>
+						<span>.</span>
+						<span id="blinking-cursor">|</span>
+					</h1>
 					<ul id="intro_icons">
 						<li className="intro_icon">
-							Builder.				
+							Leader.				
 						</li>
 						<li className="intro_icon">
-							Communicator.			
+							Developer.			
 						</li>
 						<li className="intro_icon">
-							Implementor.				
+							Communicator.				
 						</li>
 					</ul>
 				</div>

@@ -57,16 +57,18 @@ export default class Projects extends Component {
 					<ul id="projectList">
 						<li className="project">
 							<div className="projectContent">
-								<a href="https://gameoftowers.herokuapp.com/" className="projectName">Game of Towers</a>
+								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
+								</h1>
 								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
 							</div>
 							<div className="projectPhotoContainer">
-								<img src="" alt="insertprojectphothere" id="projectPhoto"/>
+								<img src="" alt="insertprojectphothere" className="projectPhoto"/>
 							</div>
 						</li>
 						<li className="project">
 							<div className="projectContent">
-								<a href="https://gameoftowers.herokuapp.com/" className="projectName">Game of Towers</a>
+								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
+								</h1>
 								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
 							</div>
 							<div className="projectPhoto">
@@ -75,7 +77,8 @@ export default class Projects extends Component {
 						</li>
 						<li className="project">
 							<div className="projectContent">
-								<a href="https://gameoftowers.herokuapp.com/" className="projectName">Game of Towers</a>
+								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
+								</h1>
 								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
 							</div>
 							<div className="projectPhoto">

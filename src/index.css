@@ -3,13 +3,12 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
     background-color: #FBFBFF;
     font-family: 'Roboto', sans-serif;
 }
 
 ul {
-    list-style: none
+    list-style: none;
 }
 
 .content {
@@ -27,32 +26,102 @@ ul {
 .headerText {
     color: #FF331F;
     margin-top:0;
-    text-align: center;
     font-weight: 1;
+    font-size: 2.5em;
 }
 
 #intro {
-  background-image: url("http://www.wallpapers4u.org/wp-content/uploads/city_night_city_tokyo_hdr_13663_1920x1080.jpg");
-  background-attachment: fixed;
   width: 100%;
-  height:100vh;
-  overflow: visible;
+  min-height:100vh;
+  position:relative;
+  background-color: #7e7e7e;
 }
 
-#intro_content {
-  overflow:hidden;
+#introContentContainer {
   width: 100%;
-  height: 17em;
-  position: relative;
-  top: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:auto;
+  min-height:70%;
   background-color: #7e7e7e;
 }
 
 #intro_message {
-  text-align: center;
+  display:block;
+  padding-top: 1em;
+  width:70%;
+  margin-left: auto;
+  margin-right:auto;
+  text-align: left;
   font-size: 5em;
   z-index: 1;
-  margin-bottom: -.15em;
+  margin-top:0;
+  font-weight: 1;
+  color:#FBFBFF;
+}
+
+#intro_message > span {
+    display:inline;
+    white-space:nowrap;
+}
+
+#name {
+  color: #FF331F;
+}
+
+#blinking-cursor {
+  font-weight: 100;
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
 
 #intro_icons {
@@ -60,15 +129,18 @@ ul {
 }
 
 #intro_icons {
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
   column-count:3;
+  text-align: left;
   padding-left: 0;
-  text-align: center;
 }
 
 #intro_icons > li {
   display: block;
   color: #FBFBFF;
-  font-size: 3em;
+  font-size: 9vh;
 }
 
 #aboutMeContainer {
@@ -88,7 +160,7 @@ ul {
 }
 
 .aboutMeText {
-  font-size: 1.3em;
+  font-size: 4vh;
   width: 100%;
 }
 
@@ -110,12 +182,9 @@ ul {
 #technologies {
   height: 35em;
   width: 100%;
-  color:white;
-  background-image: url("http://werehumans.com/wp-content/uploads/2016/04/CodingSnippet.jpg");
-  background-size: 100% 100%;
   z-index: 0;
   background-attachment: fixed;
-  background-color: #7e7e7e;
+  background-color: #FBFBFF;
 }
 
 #techonologiesContent {
@@ -201,6 +270,11 @@ ul {
   width:55%;
   text-align: left;
   margin-right: 0;
+}
+
+.projectName {
+  text-align: center;
+  font-size: 4vh;
 }
 
 #contactMe {   
