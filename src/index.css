@@ -15,6 +15,9 @@ ul {
 .content {
     color: #1E1E1E;
     background-color: #FBFBFF;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #headerIntroWord {
@@ -24,6 +27,8 @@ ul {
 .headerText {
     color: #FF331F;
     margin-top:0;
+    text-align: center;
+    font-weight: 1;
 }
 
 #intro {
@@ -40,7 +45,7 @@ ul {
   height: 17em;
   position: relative;
   top: 30%;
-  background-color: #1E1E1E;
+  background-color: #7e7e7e;
 }
 
 #intro_message {
@@ -90,7 +95,8 @@ ul {
 #aboutMePhotoContainer {
   display: inline-block;
   width: 45%;
-  float:right;
+  height: auto;
+  max-height: 100%;
 }
 
 #aboutMePicture {
@@ -109,13 +115,13 @@ ul {
   background-size: 100% 100%;
   z-index: 0;
   background-attachment: fixed;
-  background-color: black;
+  background-color: #7e7e7e;
 }
 
 #techonologiesContent {
     position:relative;
     top:25%;
-    background-color: #1E1E1E;
+    background-color: #7e7e7e;
     max-height: 45%;
 }
 
@@ -174,16 +180,10 @@ ul {
   list-style: none;
 }
 
-.projectRight {
-  text-align: right;
-}
-
 .project {
     width: 70%;
     text-align:left;
     display:inline-block;
-    padding-left:13em;
-    padding-right:15em;
 }
 
 .projectPhoto {
@@ -204,7 +204,7 @@ ul {
 }
 
 #contactMe {   
-  background-color: #1E1E1E;
+  background-color: #7e7e7e;
 }
 
 #contactContent {

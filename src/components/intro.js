@@ -5,7 +5,7 @@ export default class Intro extends Component {
 		return (
 			<div id="intro" >
 				<div id="intro_content" className="content">
-					<p id="intro_message" className="headerText">Jo Vincent Ruiz</p>
+					<p id="intro_message" className="headerText">Hi I'm Jo Vincent, but you can call me JR</p>
 					<ul id="intro_icons">
 						<li className="intro_icon">
 							Builder.				

@@ -12,6 +12,8 @@ export default class AboutMe extends Component {
 					</p>
 					<p className="aboutMeText">My time spent not working on coding has not gone to waste, I have learned many things about myself, along with skills in communication, learning, and working efficiently that will make me an invaluable asset to any team.
 					</p>
+					<p className="aboutMeText bottom">My time spent not working on coding has not gone to waste, I have learned many things about myself, along with skills in communication, learning, and working efficiently that will make me an invaluable asset to any team.
+					</p>
 				</div>
 				<div id="aboutMePhotoContainer">
 					<img src={selfPhoto} alt="insertpictureofme" id="aboutMePicture"/>
