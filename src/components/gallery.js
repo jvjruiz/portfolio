@@ -750,8 +750,9 @@ export default class ImageGallery extends React.Component {
             item.description &&
               <span className='image-gallery-description'>
                 <h1 className="projectName">{item.projectName}</h1>
-                <p className="technologyList">{item.technologies}</p>
-                <p>{item.description}</p>
+                <p className="technologyList image-gallery-description-text">{item.technologies}</p>
+                <p className="image-gallery-description-text">{item.description}</p>
+                <p className="image-gallery-description-text"><a href={item.github}>Github</a> - <a href={item.live}>Live</a></p>        
               </span>
           }
         </div>

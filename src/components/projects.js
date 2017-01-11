@@ -20,7 +20,9 @@ export default class Projects extends Component {
 	        originalClass: "galleryImage",
 	        thumbnailClass: "thumbnailImage",
 	       technologies: "HTML - CSS - Canvas - React - Redux - MongoDB",
-	        projectName: "Game of Towers"
+	        projectName: "Game of Towers",
+	        github: "https://github.com/matcodesalot/creepy-walkers",
+	        live: "gameoftowers.herokuapp.com"
 	      },
 	      {
 	       original: meteorChat,
@@ -29,7 +31,9 @@ export default class Projects extends Component {
 	        originalClass: "galleryImage",
 	        thumbnailClass: "thumbnailImage",
 	        technologies: "HTML - CSS - Meteor - React",
-	        projectName: "Meteor Chat"
+	        projectName: "Meteor Chat",
+	        github: "https://github.com/jvjruiz/meteor-react-chat",
+	        live: "https://meteor-chat-react.herokuapp.com/"
 	      },
 	      {
 	       original: japaneseX,
@@ -38,7 +42,9 @@ export default class Projects extends Component {
 	        originalClass: "galleryImage",
 	        thumbnailClass: "thumbnailImage",
 	        technologies: "HTML - CSS - React - Redux - MongoDB - OAuth 2.0",
-	        projectName: "Japanese X"
+	        projectName: "Japanese X",
+	        github:"https://github.com/jvjruiz/spaced_repetition",
+	        live: ""
 	      }
     	]
 
