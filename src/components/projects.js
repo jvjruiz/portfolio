@@ -1,91 +1,58 @@
 import React, {Component} from 'react';
-import jsLogo from "../assets/logos/js.png";
-import htmlLogo from "../assets/logos/html5.png";
-import cssLogo from "../assets/logos/css3.png";
-import jqueryLogo from "../assets/logos/jquery.png";
-import meteorLogo from "../assets/logos/meteor.png";
-import reactLogo from "../assets/logos/react.png";
-import reduxLogo from "../assets/logos/redux.png";
-import mongoLogo from "../assets/logos/mongodb.png";
-import canvasLogo from "../assets/logos/canvas.png";
+
+import Gallery from './gallery';
+
+import gameOfTowers from '../assets/game-of-towers.png'
+import japaneseX from '../assets/japanesex.png'
+import meteorChat from '../assets/meteor-chat.png'
 
 export default class Projects extends Component {
+	handleImageLoad(event) {
+    	console.log('Image loaded ', event.target)
+  	}
+
 	render() {
+		const images = [
+	      {
+	        original: gameOfTowers,
+	        thumbnail: gameOfTowers,
+	        description: 'A simple tower defense game made built with Canvas using an entity component system architecture.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	       technologies: "HTML - CSS - Canvas - React - Redux - MongoDB",
+	        projectName: "Game of Towers"
+	      },
+	      {
+	       original: meteorChat,
+	        thumbnail: meteorChat,
+	        description: 'Instant messaging app build with React and Meteor.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	        technologies: "HTML - CSS - Meteor - React",
+	        projectName: "Meteor Chat"
+	      },
+	      {
+	       original: japaneseX,
+	        thumbnail: japaneseX,
+	        description: 'Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	        technologies: "HTML - CSS - React - Redux - MongoDB - OAuth 2.0",
+	        projectName: "Japanese X"
+	      }
+    	]
+
 		return(
 			<div id="projects">
-				<div id="technologies">
-					<div id="techonologiesContent">
-						<p id="technologiesHeader">Projects</p>
-						<div id="languages">
-							<ul id="languageList">
-								<li className="language">
-									<img src={htmlLogo} className="logo"/>
-								</li>
-								<li className="language">
-									<img src={cssLogo} className="logo"/>
-								</li>
-								<li className="language">
-									<img src={jsLogo} className="logo"/>
-								</li>
-							</ul>
-						</div>
-						<div id="api">
-							<ul id="apiList">
-								<li className="api">
-									<img src={meteorLogo} className="logo"/>
-								</li>
-								<li className="api">
-									<img src={reduxLogo} className="logo"/>
-								</li>
-								<li className="api">
-									<img src={reactLogo} className="logo"/>
-								</li>
-								<li className="api">
-									<img src={mongoLogo} className="logo"/>
-								</li>
-								<li className="api">
-									<img src={canvasLogo} className="logo"/>
-								</li>
-								<li className="api">
-									<img src={jqueryLogo} className="logo"/>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div className="content">
-					<ul id="projectList">
-						<li className="project">
-							<div className="projectContent">
-								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
-								</h1>
-								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
-							</div>
-							<div className="projectPhotoContainer">
-								<img src="" alt="insertprojectphothere" className="projectPhoto"/>
-							</div>
-						</li>
-						<li className="project">
-							<div className="projectContent">
-								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
-								</h1>
-								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
-							</div>
-							<div className="projectPhoto">
-								<img src="" alt="insertprojectphothere"/>
-							</div>
-						</li>
-						<li className="project">
-							<div className="projectContent">
-								<h1 className="projectName"><a href="https://gameoftowers.herokuapp.com/">Meteor Chat</a>
-								</h1>
-								<p className="projectDescription">Game of Towers is a simple tower defense game build with HTML Canvas and Javascript. A player builds towers to stop oncoming creeps from getting to the end of the maze. Players are able to make an account and login to save their high score.</p>
-							</div>
-							<div className="projectPhoto">
-								<img src="" alt="insertprojectphothere"/>
-							</div>
-						</li>
-					</ul>
+				<div>
+					<span className="headerContainer">
+						<h1 id="projectsHeader">Projects</h1>
+					</span>
+					<Gallery
+        			items={images}
+        			slideInterval={2000}
+        			onImageLoad={this.handleImageLoad}
+        			/>
 				</div>
 			</div>
 		)
