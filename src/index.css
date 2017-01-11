@@ -317,3 +317,5 @@ span {
 p span {
     color: #FBFBFF;
 }
+
+@import "node_modules/react-image-gallery/styles/css/image-gallery.css";
