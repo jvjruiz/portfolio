@@ -1,6 +1,10 @@
 import React, {Component} from 'react';
 
-import ImageGallery from 'react-image-gallery';
+import Gallery from './gallery';
+
+import gameOfTowers from '../assets/game-of-towers.png'
+import japaneseX from '../assets/japanesex.png'
+import meteorChat from '../assets/meteor-chat.png'
 
 export default class Projects extends Component {
 	handleImageLoad(event) {
@@ -10,28 +14,41 @@ export default class Projects extends Component {
 	render() {
 		const images = [
 	      {
-	        original: 'http://lorempixel.com/1000/600/nature/1/',
-	        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+	        original: gameOfTowers,
+	        thumbnail: gameOfTowers,
+	        description: 'A simple tower defense game made built with Canvas using an entity component system architecture.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	       technologies: "HTML - CSS - Canvas - React - Redux - MongoDB",
+	        projectName: "Game of Towers"
 	      },
 	      {
-	        original: 'http://lorempixel.com/1000/600/nature/2/',
-	        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+	       original: meteorChat,
+	        thumbnail: meteorChat,
+	        description: 'Instant messaging app build with React and Meteor.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	        technologies: "HTML - CSS - Meteor - React",
+	        projectName: "Meteor Chat"
 	      },
 	      {
-	        original: 'http://lorempixel.com/1000/600/nature/3/',
-	        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+	       original: japaneseX,
+	        thumbnail: japaneseX,
+	        description: 'Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked.',
+	        originalClass: "galleryImage",
+	        thumbnailClass: "thumbnailImage",
+	        technologies: "HTML - CSS - React - Redux - MongoDB - OAuth 2.0",
+	        projectName: "Japanese X"
 	      }
     	]
 
 		return(
 			<div id="projects">
-				<div id="technologies">
-					<div id="techonologiesContent">
-						<h1 id="technologiesHeader">Projects</h1>
-					</div>
-				</div>
 				<div>
-					<ImageGallery
+					<span className="headerContainer">
+						<h1 id="projectsHeader">Projects</h1>
+					</span>
+					<Gallery
         			items={images}
         			slideInterval={2000}
         			onImageLoad={this.handleImageLoad}

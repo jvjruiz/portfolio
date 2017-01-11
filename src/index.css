@@ -53,7 +53,7 @@ ul {
   margin-left: auto;
   margin-right:auto;
   text-align: left;
-  font-size: 5em;
+  font-size: 9vh;
   z-index: 1;
   margin-top:0;
   font-weight: 1;
@@ -140,7 +140,7 @@ ul {
 #intro_icons > li {
   display: block;
   color: #FBFBFF;
-  font-size: 9vh;
+  font-size: 7vh;
 }
 
 #aboutMeContainer {
@@ -160,8 +160,12 @@ ul {
 }
 
 .aboutMeText {
-  font-size: 4vh;
+  font-size: 3vh;
   width: 100%;
+}
+
+.quote {
+    font-style:italic;
 }
 
 #aboutMePhotoContainer {
@@ -236,45 +240,15 @@ ul {
 }
 
 #projectsHeader {
+    font-size:7vh;
     text-align: center;
-}
-
-#projectsPhoto {
-  height: 20em;
-  width: 100%;
-}
-
-#projectList {
-    padding-left: 0;
-  list-style: none;
-}
-
-.project {
-    width: 70%;
-    text-align:left;
-    display:inline-block;
-}
-
-.projectPhoto {
-    max-width: 100%;
-    margin-right: 0;
-}
-
-.projectPhotoContainer {
-  width:45%;
-  float: right;
-}
-
-.projectContent {
-  float:left;
-  width:55%;
-  text-align: left;
-  margin-right: 0;
+    color: #FF331F;
 }
 
 .projectName {
-  text-align: center;
+    color: #FF331F;
   font-size: 4vh;
+
 }
 
 #contactMe {   
@@ -318,4 +292,24 @@ p span {
     color: #FBFBFF;
 }
 
-@import "node_modules/react-image-gallery/styles/css/image-gallery.css";
+@import "image-gallery.css";
+
+.galleryImage {
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    outline: solid 1px black;
+}
+
+.right, .left {
+    display:none;
+}
+
+
+.techonology{
+    display: block !important;
+}
+
