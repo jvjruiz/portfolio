@@ -8,7 +8,7 @@ export default class Intro extends Component {
 	}
 
 	renderRandomPhrase() {
-		let randomPhrases=['I Live in constant fear of hitting my head.', 'Sometimes I can not help but dance.','Nothing beats a medium rare steak.', 'Science Rules.', 'Success is just like something at the store, you just have to go get it.']
+		let randomPhrases=['I live in constant fear of hitting my head.', 'Sometimes I can not help but dance.','Nothing beats a medium rare steak.', 'Science Rules.', 'Success is just like something at the store, you just have to go get it.']
 		let randomPhrase = randomPhrases[this.randomNumber(0,randomPhrases.length)]
 		return (
 			<p className="randomPhrase">{randomPhrase}</p>
@@ -23,11 +23,11 @@ export default class Intro extends Component {
 						Hi, 
 						<br />
 						<span>I'm </span>
-						<span id="name">JR</span>
+						<span id="name">Jo Vincent</span>
 						<span>.</span>
 						<span id="blinking-cursor">|</span>
 					</h1>
-					<ul id="intro_icons">
+					<ul id="intro_icons" className="headerText">
 						<li className="intro_icon">
 							Leader.				
 						</li>

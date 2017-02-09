@@ -3,7 +3,7 @@ html,body {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    background-color: #FBFBFF;
+    background-color: #e6e6e6;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -12,39 +12,43 @@ ul {
 }
 
 .content {
-    color: #1E1E1E;
-    background-color: #FBFBFF;
+    color: #e6e6e6;
+    background-color: #e6e6e6;
     width: 70%;
     margin-right: auto;
     margin-left: auto;
 }
 
 #headerIntroWord {
-  color:#1E1E1E;
+  color:#e6e6e6;
 }
 
 .headerText {
-    color: #FF331F;
-    margin-top:0;
+    color: #ff2052;
     font-weight: 1;
-    font-size: 7vh;
-    margin-bottom:1vh;
+    font-size: 65px;
+}
+
+.subHeaderText {
+    font-size:45px;
+}
+
+.contentText {
+    font-size:24px;
+    color: #404040;
 }
 
 #intro {
   width: 100%;
+  height:100%;
   min-height:100vh;
   position:relative;
-  background-color: #7e7e7e;
+  background-color: #404040;
 }
 
 #introContentContainer {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top:auto;
-  min-height:70%;
-  background-color: #7e7e7e;
+  background-color: #404040;
 }
 
 #intro_message {
@@ -54,11 +58,11 @@ ul {
   margin-left: auto;
   margin-right:auto;
   text-align: left;
-  font-size: 9vh;
+  font-size: 100px;
   z-index: 1;
   margin-top:0;
   font-weight: 1;
-  color:#FBFBFF;
+  color:#e6e6e6;
 }
 
 #intro_message > span {
@@ -67,7 +71,7 @@ ul {
 }
 
 #name {
-  color: #FF331F;
+  color: #ff2052;
 }
 
 #blinking-cursor {
@@ -126,41 +130,40 @@ ul {
 }
 
 #intro_icons {
-  list-style: none;
-}
-
-#intro_icons {
+    list-style: none;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width:70%;
   margin-left:auto;
   margin-right:auto;
-  column-count:3;
   text-align: left;
   padding-left: 0;
 }
 
 #intro_icons > li {
   display: block;
-  color: #FBFBFF;
-  font-size: 7vh;
+  color: #e6e6e6;
 }
 
 .randomPhraseContainer {
     width:70%;
     margin-left:auto;
     margin-right:auto;
-    padding-top:15vh;
+    padding-top:150px;
 }
 
 .randomPhrase {
     font-size:4vh;
     text-align: left;
     width:100%;
-    color:#FBFBFF;
+    color:#e6e6e6;
     font-weight:900;
 }
 
 #aboutMeContainer {
-    display:block;
+    display:flex;
+    flex-wrap: wrap;
     z-index:1;
     width:70%;
     height:60%;
@@ -171,12 +174,16 @@ ul {
 }
 
 #aboutMeTextContainer {
-  display:inline-block;
-  width:55%;
+  width:50%;
+vertical-align: top;
+padding-right: 5%;
+}
+
+.aboutMeHeader {
+    margin-top:0;
 }
 
 .aboutMeText {
-  font-size: 3vh;
   width: 100%;
 }
 
@@ -185,13 +192,12 @@ ul {
 }
 
 #aboutMePhotoContainer {
-  display: inline-block;
   width: 45%;
   height: auto;
   max-height: 100%;
 }
 
-#aboutMePicture {
+#aboutMePhoto {
   max-width:100%;
 }
 
@@ -204,33 +210,65 @@ ul {
   width: 100%;
   z-index: 0;
   background-attachment: fixed;
-  background-color: #FBFBFF;
+  background-color: #e6e6e6;
 }
 
 #techonologiesContent {
     position:relative;
     top:25%;
-    background-color: #7e7e7e;
+    background-color: #404040;
     max-height: 45%;
 }
 
 #projectsHeader {
-    font-size:7vh;
     text-align: center;
-    color: #FF331F;
+    color: #ff2052;
+}
+
+.projectContainer {
+    width:70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.projectText {
+    display:inline-block;
+    vertical-align: top;
+    width:60%;
 }
 
 .projectName {
-    color: #FF331F;
-  font-size: 5vh;
+    color: #ff2052;
+    font-weight:bold;
+}
 
+.projectTechnologies {
+    
+    font-weight:bold;
+}
+
+.projectDescription {
+    
+}
+
+.projectLink {
+    display:inline-block;
+    width: 50%;
+    
+}
+
+.projectImageContainer {
+    display: inline-block;
+    width: 40%;
+}
+
+.projectImage {
+    width: 100%;
 }
 
 #contactMe {   
-  background-color: #7e7e7e;
+  background-color: #404040;
 }
-
-
 
 #contactContent {
   width:70%;
@@ -241,12 +279,9 @@ ul {
 
 #contactHeader {
     margin-top:0;
-    font-size: 5vh;
-    color:#FF331F;
+    color:#ff2052;
     margin-bottom: 0;
 }
-
-
 
 #contactInfo {
   width:100%;
@@ -255,14 +290,14 @@ ul {
   text-align: center;
   list-style:none;
   margin-bottom: 0px;
-  color: #FBFBFF;
+  color: #e6e6e6;
   column-count:3;
   padding-left:0;
 }
 
 #contactInfo > li{
   display:block;
-  font-size: 5vh;
+  font-size:45px;
 }
 
 span {
@@ -270,47 +305,7 @@ span {
 }
 
 p span {
-    color: #FBFBFF;
-}
-
-@import "image-gallery.css";
-
-.galleryImage {
-    width:70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img {
-    outline: solid 1px black;
-}
-
-a:link {
-    color:#FBFBFF;
-}
-
-a:visited {
-   color:#FBFBFF; 
-}
-
-a:hover {
-    color:black;
-}
-
-.right, .left {
-    display:none;
+    color: #e6e6e6;
 }
 
 
-.techonology{
-    display: block !important;
-}
-
-.image-gallery-description {
-    width:100%;
-    padding: 0 !important;
-}
-
-.image-gallery-description-text {
-    font-size: 3vh;
-}

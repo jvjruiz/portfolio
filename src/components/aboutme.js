@@ -7,17 +7,17 @@ export default class AboutMe extends Component {
 		return (
 			<div id="aboutMeContainer" className="content">
 				<div id="aboutMeTextContainer">
-					<h2 className="headerText">Who am I?</h2>
-					<p className="aboutMeText">My full name is Jo Vincent Ruiz, but you can call me JR. My entire life I have always been passionate about building and understanding how things work. That passion has translated into an ambition to become the best developer I can be. 
+					<h2 className="headerText aboutMeHeader">Who am I?</h2>
+					<p className="aboutMeText contentText">My full name is Jo Vincent Ruiz, but you can call me JR. My entire life I have always been passionate about building and understanding how things work. That passion has translated into an ambition to become the best developer I can be. 
 					</p>
-					<p className="aboutMeText">Although a huge part, developing is not my entire life. My favorite thing in the world is to travel. Being able to see different cultures fascinates me and inspires me to do better in life. Some of my other interests include video games, cars, and going on wikipedia binges.
+					<p className="aboutMeText contentText">Although a huge part, developing is not my entire life. My favorite thing in the world is to travel. Being able to see different cultures fascinates me and inspires me to do better in life. Some of my other interests include video games, cars, street fashion, and going on wikipedia binges.
 					</p>
-					<p className="aboutMeText quote">
+					<p className="aboutMeText quote contentText">
 						"To learn how to succeed, you must first learn how to fail at giving up."
 					</p>
 				</div>
 				<div id="aboutMePhotoContainer">
-					<img src={selfPhoto} alt="insertpictureofme" id="aboutMePicture"/>
+					<img src={selfPhoto} alt="insertpictureofme" id="aboutMePhoto"/>
 				</div>
 			</div>
 		)

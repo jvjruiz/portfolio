@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import Gallery from './gallery';
-
 import gameOfTowers from '../assets/game-of-towers.png'
 import japaneseX from '../assets/japanesex.png'
 import meteorChat from '../assets/meteor-chat.png'
@@ -12,53 +10,82 @@ export default class Projects extends Component {
   	}
 
 	render() {
-		const images = [
-	      {
-	        original: gameOfTowers,
-	        thumbnail: gameOfTowers,
-	        description: 'A simple tower defense game made built with Canvas using an entity component system architecture.',
-	        originalClass: "galleryImage",
-	        thumbnailClass: "thumbnailImage",
-	       technologies: "HTML - CSS - Canvas - React - Redux - MongoDB",
-	        projectName: "Game of Towers",
-	        github: "https://github.com/matcodesalot/creepy-walkers",
-	        live: "gameoftowers.herokuapp.com"
-	      },
-	      {
-	       original: meteorChat,
-	        thumbnail: meteorChat,
-	        description: 'Instant messaging app build with React and Meteor.',
-	        originalClass: "galleryImage",
-	        thumbnailClass: "thumbnailImage",
-	        technologies: "HTML - CSS - Meteor - React",
-	        projectName: "Meteor Chat",
-	        github: "https://github.com/jvjruiz/meteor-react-chat",
-	        live: "https://meteor-chat-react.herokuapp.com/"
-	      },
-	      {
-	       original: japaneseX,
-	        thumbnail: japaneseX,
-	        description: 'Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked.',
-	        originalClass: "galleryImage",
-	        thumbnailClass: "thumbnailImage",
-	        technologies: "HTML - CSS - React - Redux - MongoDB - OAuth 2.0",
-	        projectName: "Japanese X",
-	        github:"https://github.com/jvjruiz/spaced_repetition",
-	        live: ""
-	      }
-    	]
-
 		return(
 			<div id="projects">
 				<div>
 					<span className="headerContainer">
-						<h1 id="projectsHeader">Projects</h1>
+						<h1 id="projectsHeader" className="headerText">Projects</h1>
 					</span>
-					<Gallery
-        			items={images}
-        			slideInterval={2000}
-        			onImageLoad={this.handleImageLoad}
-        			/>
+					<span className="contentContainer">
+						<div className="projectContainer">
+							<div className ="projectText">
+								<div className="projectName subHeaderText">
+									Game of Towers
+								</div>
+								<div className="projectTechnologies contentText">
+									HTML - CSS - Canvas - React - Redux
+								</div>
+								<div className="projectDescription contentText">
+									A simple tower defense game made built with Canvas using an entity component system architecture.
+								</div>
+								<div className="projectLinks contentText">
+									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink">Github</a>
+									<a href="gameoftowers.herokuapp.com" className="projectLink">Live</a>
+								</div>
+							</div>
+							<div className="projectImageContainer">
+								<img src={gameOfTowers} className="projectImage" />
+							</div>
+						</div>
+						<div className="projectContainer">
+							<div className ="projectText">
+								<div className="projectName subHeaderText">
+									JapaneseX
+								</div>
+								<div className="projectTechnologies contentText">
+									HTML - CSS - React - Redux - MongoDB - OAuth 2.0
+								</div>
+								<div className="projectDescription contentText">
+									Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked.
+								</div>
+								<div className="projectLinks contentText">
+									<div className="projectLink">
+										<a href="https://github.com/jvjruiz/spaced_repetition">Github</a>
+									</div>
+									<div className="projectLink">
+										<a href="gameoftowers.herokuapp.com">Live</a>
+									</div>
+								</div>
+							</div>
+							<div className="projectImageContainer">
+								<img src={japaneseX} className="projectImage" />
+							</div>
+						</div>
+						<div className="projectContainer">
+							<div className ="projectText">
+								<div className="projectName subHeaderText">
+									Meteor Chat
+								</div>
+								<div className="projectTechnologies contentText">
+									HTML - CSS - Canvas - React
+								</div>
+								<div className="projectDescription contentText">
+									Instant messaging app build with React and Meteor.
+								</div>
+								<div className="projectLinks contentText">
+									<div className="projectLink">
+										<a href="https://github.com/jvjruiz/meteor-react-chat">Github</a>
+									</div>
+									<div className="projectLink">
+										<a href="https://meteor-chat-react.herokuapp.com/">Live</a>
+									</div>
+								</div>
+							</div>
+							<div className="projectImageContainer">
+								<img src={meteorChat} className="projectImage" />
+							</div>
+						</div>
+					</span>
 				</div>
 			</div>
 		)
