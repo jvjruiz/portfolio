@@ -1,7 +1,5 @@
 import React, {Component} from 'react';
 
-import Gallery from './gallery';
-
 import gameOfTowers from '../assets/game-of-towers.png'
 import japaneseX from '../assets/japanesex.png'
 import meteorChat from '../assets/meteor-chat.png'
@@ -48,11 +46,24 @@ export default class Projects extends Component {
 					<span className="headerContainer">
 						<h1 id="projectsHeader">Projects</h1>
 					</span>
-					<Gallery
-        			items={images}
-        			slideInterval={2000}
-        			onImageLoad={this.handleImageLoad}
-        			/>
+					<span className="contentContainer">
+						<div className="projectContainer">
+							<div className="project">
+								<div className="projectName">
+									Game of Towers
+								</div>
+								<div className="projectTechnologies">
+									HTML - CSS - Canvas - React - Redux
+								</div>
+								<div className="projectDescription">
+									A simple tower defense game made built with Canvas using an entity component system architecture.
+								</div>
+								<div className="projectImage">
+									<img src={gameOfTowers} />
+								</div>
+							</div>
+						</div>
+					</span>
 				</div>
 			</div>
 		)

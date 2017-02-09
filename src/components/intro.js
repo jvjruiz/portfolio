@@ -10,7 +10,7 @@ export default class Intro extends Component {
 						<br />
 						<span>I'm </span>
 						<span id="name">JR</span>
-						<span>.</span>
+						<span>,</span>
 						<span id="blinking-cursor">|</span>
 					</h1>
 					<ul id="intro_icons">

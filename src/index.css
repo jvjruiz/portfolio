@@ -183,54 +183,6 @@ ul {
   width: 100%;
 }
 
-#technologies {
-  height: 35em;
-  width: 100%;
-  z-index: 0;
-  background-attachment: fixed;
-  background-color: #FBFBFF;
-}
-
-#techonologiesContent {
-    position:relative;
-    top:25%;
-    background-color: #7e7e7e;
-    max-height: 45%;
-}
-
-#technologiesHeader {
-  color: #FF331F;
-  font-size: 3em;  
-  text-align: center;
-  position: relative;
-  top: 50%;
-  margin-top:0;
-  margin-bottom:0;
-}
-
-#languageList {
-    text-align: center;
-    column-count: 3;
-    width:20%;
-    position:relative;
-    left:37%;
-}
-
-#languageList > li {
-    display:block;
-}
-
-#apiList {
-    column-count: 6;
-    width:45%;
-    position:relative;
-    left: 25%;
-}
-
-#apiList > li {
-    display:block;
-}
-
 .logo {
     height: auto;
     width: auto;
@@ -248,7 +200,6 @@ ul {
 .projectName {
     color: #FF331F;
   font-size: 4vh;
-
 }
 
 #contactMe {   
@@ -291,25 +242,3 @@ span {
 p span {
     color: #FBFBFF;
 }
-
-@import "image-gallery.css";
-
-.galleryImage {
-    width:70%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-img {
-    outline: solid 1px black;
-}
-
-.right, .left {
-    display:none;
-}
-
-
-.techonology{
-    display: block !important;
-}
-
