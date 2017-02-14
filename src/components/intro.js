@@ -38,9 +38,6 @@ export default class Intro extends Component {
 							Communicator.				
 						</li>
 					</ul>
-					<div className="randomPhraseContainer">
-						{this.renderRandomPhrase()}
-					</div>
 				</div>
 			</div>
 		)

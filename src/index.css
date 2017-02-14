@@ -11,18 +11,6 @@ ul {
     list-style: none;
 }
 
-.content {
-    color: #e6e6e6;
-    background-color: #e6e6e6;
-    width: 70%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#headerIntroWord {
-  color:#e6e6e6;
-}
-
 .headerText {
     color: #ff2052;
     font-weight: 1;
@@ -36,19 +24,6 @@ ul {
 .contentText {
     font-size:24px;
     color: #404040;
-}
-
-#intro {
-  width: 100%;
-  height:100%;
-  min-height:100vh;
-  position:relative;
-  background-color: #404040;
-}
-
-#introContentContainer {
-  width: 100%;
-  background-color: #404040;
 }
 
 #intro_message {
@@ -72,6 +47,31 @@ ul {
 
 #name {
   color: #ff2052;
+}
+
+.content {
+    color: #e6e6e6;
+    background-color: #e6e6e6;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#headerIntroWord {
+  color:#e6e6e6;
+}
+
+#intro {
+  width: 100%;
+  height:100%;
+  min-height:100vh;
+  position:relative;
+  background-color: #404040;
+}
+
+#introContentContainer {
+  width: 100%;
+  background-color: #404040;
 }
 
 #blinking-cursor {
@@ -153,6 +153,7 @@ ul {
     padding-top:150px;
 }
 
+/*
 .randomPhrase {
     font-size:4vh;
     text-align: left;
@@ -160,10 +161,11 @@ ul {
     color:#e6e6e6;
     font-weight:900;
 }
+*/
 
 #aboutMeContainer {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     z-index:1;
     width:70%;
     height:60%;
@@ -174,9 +176,9 @@ ul {
 }
 
 #aboutMeTextContainer {
-  width:50%;
-vertical-align: top;
-padding-right: 5%;
+    width:50%;
+    vertical-align: top;
+    padding-right: 5%;
 }
 
 .aboutMeHeader {
@@ -192,48 +194,38 @@ padding-right: 5%;
 }
 
 #aboutMePhotoContainer {
-  width: 45%;
-  height: auto;
-  max-height: 100%;
+  height: 36em;
+  width: 34em;
 }
 
 #aboutMePhoto {
-  max-width:100%;
+  width:100%;
 }
 
 #projects {
   width: 100%;
 }
 
-#technologies {
-  height: 35em;
-  width: 100%;
-  z-index: 0;
-  background-attachment: fixed;
-  background-color: #e6e6e6;
-}
-
-#techonologiesContent {
-    position:relative;
-    top:25%;
-    background-color: #404040;
-    max-height: 45%;
-}
-
 #projectsHeader {
-    text-align: center;
+    width:70%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
     color: #ff2052;
 }
 
 .projectContainer {
     width:70%;
+    display:flex;
+    flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 2em;
 }
 
 .projectText {
-    display:inline-block;
     vertical-align: top;
+    padding-left: 5%;
     width:60%;
 }
 
@@ -243,12 +235,7 @@ padding-right: 5%;
 }
 
 .projectTechnologies {
-    
     font-weight:bold;
-}
-
-.projectDescription {
-    
 }
 
 .projectLink {
@@ -258,8 +245,7 @@ padding-right: 5%;
 }
 
 .projectImageContainer {
-    display: inline-block;
-    width: 40%;
+    width: 26em;
 }
 
 .projectImage {
