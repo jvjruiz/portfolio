@@ -11,7 +11,18 @@ ul {
     list-style: none;
 }
 
-/* font sizes */
+a {
+    color:#ff2052;
+}
+
+a:visited {
+    color: #a2a79e;
+}
+
+a:hover {
+    color: #404040;
+}
+
 .headerText {
     color: #ff2052;
     font-weight: 1;
@@ -19,7 +30,7 @@ ul {
 }
 
 .subHeaderText {
-    font-size:2.3em;
+    font-size:2em;
 }
 
 .contentText {
@@ -89,7 +100,7 @@ ul {
 
 #blinking-cursor {
   font-weight: 100;
-  color: #2E3D48;
+  color: #171219 ;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
   -ms-animation: 1s blink step-end infinite;
