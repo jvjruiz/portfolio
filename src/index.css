@@ -39,20 +39,6 @@ ul {
   color:#e6e6e6;
 }
 
-@media only screen and (max-width: 375px) {
-    #intro_message {
-        padding-top:3em;
-        font-size: 2.8em;
-    }
-    .headerText {
-        font-size:2.5em;
-    }
-    #introBreak {
-        display: none;
-    }
-}
-
-
 #intro_message > span {
     display:inline;
     white-space:nowrap;
@@ -205,7 +191,7 @@ ul {
 #aboutMeTextContainer {
     width:50%;
     vertical-align: top;
-    padding-right: 5%;
+    padding-right: 3%;
 }
 
 .aboutMeHeader {
@@ -221,8 +207,7 @@ ul {
 }
 
 #aboutMePhotoContainer {
-  height: 36em;
-  width: 34em;
+  width: 35em;
 }
 
 #aboutMePhoto {
@@ -321,4 +306,55 @@ p span {
     color: #e6e6e6;
 }
 
+@media only screen and (max-width: 450px) {
+    #intro_message {
+        padding-top:3em;
+        font-size: 2.6em;
+    }
+    .headerText {
+        font-size:2.5em;
+    }
 
+    .contentText {
+        font-size: 1.3em;
+    }
+
+    .subHeaderText {
+        font-size: 1.8em;
+    }
+
+    #introBreak {
+        display: none;
+    }
+    #aboutMeContainer {
+        padding-top: 1em;
+        width:85%;
+    }
+
+    .aboutMeHeader {
+        margin-bottom: 0;
+    }
+
+    #aboutMeTextContainer {
+        padding-top:1em;
+        width:100%;
+    }
+    .headerText {
+        font-size:2.5em;
+    }
+
+    #projectsHeader {
+        margin-top: 0em;
+        width:85%;
+    }
+
+    .projectContainer {
+        width:85%;
+    }
+
+    .projectText {
+        width:100%;
+        padding-left: 0;
+        padding-top:.5em;
+    }
+}
