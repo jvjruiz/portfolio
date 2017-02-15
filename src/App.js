@@ -4,12 +4,13 @@ import Intro from './components/intro';
 import AboutMe from './components/aboutme';
 import Projects from './components/projects'  ;
 import ContactMe from './components/contactme';
-
+import NavBar from "./components/navbar";
 
 export default class App extends Component {
   render() {
     return (
       <div>
+        <NavBar />
         <Intro />
         <AboutMe />
         <Projects />

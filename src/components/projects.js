@@ -48,7 +48,7 @@ export default class Projects extends Component {
 							HTML - CSS - React - Redux - MongoDB - OAuth 2.0
 						</div>
 						<div className="projectDescription contentText">
-							Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked.
+							Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked. This was a two person project and my role was to build the back end and debug any issues my partner was having on the front-end.
 						</div>
 						<div className="projectLinks contentText">
 							<div className="projectLink">
@@ -72,7 +72,7 @@ export default class Projects extends Component {
 							HTML - CSS - Canvas - React
 						</div>
 						<div className="projectDescription contentText">
-							Instant messaging app build with React and Meteor.
+							Instant messaging app build with React and Meteor. This app was built in a week as a solo project to learn and get familiar with MeteorJS.
 						</div>
 						<div className="projectLinks contentText">
 							<div className="projectLink">
