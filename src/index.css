@@ -333,7 +333,7 @@ p span {
 @media only screen and (max-width: 1440px) {
 
     #scrollNotification {
-        padding-top:10em;
+        padding-top:6em;
     }
 
     #intro_message {
@@ -383,9 +383,9 @@ p span {
 }
 
 /* for laptops */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1430px) {
     #scrollNotification {
-        padding-top:15em;
+        padding-top:12em;
     }
 
     #intro_message {
@@ -435,7 +435,7 @@ p span {
 }
 
 /* for tablets */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 768px) {
     #scrollNotification {
         padding-top:20em;
     }
