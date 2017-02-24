@@ -31,7 +31,7 @@ export default class Projects extends Component {
 						</div>
 						<div className="projectLinks contentText">
 							<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink">Github</a>
-							<a href="gameoftowers.herokuapp.com" className="projectLink">Live</a>
+							<a href="https://gameoftowers.herokuapp.com" className="projectLink">Live</a>
 						</div>
 					</div>
 					
@@ -55,7 +55,7 @@ export default class Projects extends Component {
 								<a href="https://github.com/jvjruiz/spaced_repetition">Github</a>
 							</div>
 							<div className="projectLink">
-								<a href="gameoftowers.herokuapp.com">Live</a>
+								<a href="https://japanesex.herokuapp.com/">Live</a>
 							</div>
 						</div>
 					</div>
