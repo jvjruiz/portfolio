@@ -13,6 +13,7 @@ export default class Projects extends Component {
 						<div className="projectImageContainer">
 							<img src={gameOfTowers} className="projectImage" />
 						</div>
+
 						<div className ="projectText">
 							<div className="projectName subHeaderText">
 								Game of Towers
@@ -32,6 +33,7 @@ export default class Projects extends Component {
 									<a href="gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Live</a>
 								</div>
 							</div>
+
 						</div>
 					</div>					
 				</div>
@@ -47,6 +49,7 @@ export default class Projects extends Component {
 							<div className="projectTechnologies contentText">
 								<p>HTML - CSS - React - Redux - MongoDB - OAuth 2.0</p>
 							</div>
+
 							<div className="projectDescription contentText">
 								<p>Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked. This was a two person project and my role was to build the back end and debug any issues my partner was having on the front-end.
 								</p>
@@ -58,6 +61,7 @@ export default class Projects extends Component {
 								<div className="projectLink">
 									<a href="gameoftowers.herokuapp.com" className="projectLinkText">Live</a>
 								</div>
+
 							</div>
 						</div>
 					</div>
