@@ -54,7 +54,7 @@ a:hover {
 .dropdown__content {
     display: none;
     position: absolute;
-    background-color:#e6e6e6;
+    background-color:rgba(230,230,230,.9);
 }
 
 .dropdown--active .dropdown__content {
@@ -207,7 +207,7 @@ a:hover {
     display:flex;
     flex-wrap: wrap-reverse;
     z-index:1;
-    width:85%;
+    width:100%;
     height:100vh;
     padding-top: 3em;
     margin-bottom: 0;

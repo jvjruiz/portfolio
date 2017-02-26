@@ -71,7 +71,7 @@ export default class Projects extends Component {
 								<p>HTML - CSS - Javascript - Meteor - React</p>
 							</div>
 							<div className="projectDescription contentText">
-								<p>Instant messaging app build with React and Meteor. This app was built in a week as a solo project to learn and get familiar with MeteorJS.
+								<p>Instant messaging app build with React and Meteor. This app was built in a week as a solo project. 
 								</p>
 							</div>
 							<div className="projectLinks contentText">
