@@ -13,6 +13,7 @@ ul {
 
 a {
     color:#ff2052;
+    text-decoration: none;
 }
 
 a:visited {
@@ -153,6 +154,7 @@ a:hover {
 
 #introContentContainer {
   width: 100%;
+  height:100vh;
   background-color: #404040;
   display:flex;
   flex-wrap: wrap;
@@ -168,16 +170,6 @@ a:hover {
     width:85%;
     margin-right: auto;
     margin-left: auto;
-}
-
-#blinking-cursor {
-  font-weight: 100;
-  color: #171219 ;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
 }
 
 #intro_icons {
@@ -200,14 +192,13 @@ a:hover {
     display: inline;
     width:100%;
     text-align: center;
-    padding-top:7em;
 }
 
 #aboutMeContainer {
     display:flex;
     flex-wrap: wrap-reverse;
     z-index:1;
-    width:85%;
+    width:100%;
     height:100vh;
     padding-top: 3em;
     margin-bottom: 0;
@@ -307,6 +298,10 @@ a:hover {
     margin-right:2em;    
 }
 
+.projectLinkText {
+  color: #e6e6e6;
+}
+
 .projectImageContainer {
     width: 50%;
 }
@@ -361,11 +356,6 @@ p span {
 
 /* for large laptops */
 @media only screen and (max-width: 1440px) {
-
-    #scrollNotification {
-        padding-top:6em;
-    }
-
     #intro_message {
         padding-top:2em;
         font-size: 6em;
@@ -414,10 +404,6 @@ p span {
 
 /* for laptops */
 @media only screen and (max-width: 1430px) {
-    #scrollNotification {
-        padding-top:10em;
-    }
-
     #intro_message {
         padding-top:2em;
         font-size: 5em;
@@ -427,7 +413,7 @@ p span {
     }
 
     .contentText {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .subHeaderText {
@@ -443,7 +429,14 @@ p span {
     }
 
     #aboutMePhotoContainer {
-        width:20em;
+        width:40%;
+        position:relative;
+        bottom:4em;
+    }
+
+    .technologyIcons {
+      padding-left: 10%;
+      font-size: 2.8em;
     }
 
     .headerText {
@@ -451,7 +444,7 @@ p span {
     }
 
     .projectContainer {
-        width:85%;
+        width:100%;
     }
 
     .projectText {
@@ -459,8 +452,7 @@ p span {
     }
 
     .projectImageContainer {
-        width:19em;
-        padding-right: 1em;
+        width:50%;
     }
 }
 
@@ -507,7 +499,7 @@ p span {
     }
 
     .projectContainer {
-        width:85%;
+        width:80%;
     }
 
     .projectText {
@@ -573,7 +565,7 @@ p span {
     }
 
     .projectContainer {
-        width:85%;
+        width:80%;
     }
 
     .projectText {

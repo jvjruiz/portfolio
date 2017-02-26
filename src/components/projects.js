@@ -25,8 +25,12 @@ export default class Projects extends Component {
 								<p>This project was developed over the course of 3 weeks in a group of 4. My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
 							</div>
 							<div className="projectLinks contentText">
-								<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink">Github</a>
-								<a href="gameoftowers.herokuapp.com" className="projectLink">Live</a>
+								<div className="projectLink">
+									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Github</a>
+								</div>
+								<div className="projectLink">
+									<a href="gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Live</a>
+								</div>
 							</div>
 						</div>
 					</div>					
@@ -49,10 +53,10 @@ export default class Projects extends Component {
 							</div>
 							<div className="projectLinks contentText">
 								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/spaced_repetition">Github</a>
+									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="gameoftowers.herokuapp.com">Live</a>
+									<a href="gameoftowers.herokuapp.com" className="projectLinkText">Live</a>
 								</div>
 							</div>
 						</div>
@@ -76,10 +80,10 @@ export default class Projects extends Component {
 							</div>
 							<div className="projectLinks contentText">
 								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/meteor-react-chat">Github</a>
+									<a href="https://github.com/jvjruiz/meteor-react-chat" className="projectLinkText">Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="https://meteor-chat-react.herokuapp.com/">Live</a>
+									<a href="https://meteor-chat-react.herokuapp.com/" className="projectLinkText">Live</a>
 								</div>
 							</div>
 						</div>
