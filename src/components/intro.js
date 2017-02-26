@@ -13,7 +13,6 @@ export default class Intro extends Component {
 							<span>I'm </span>
 							<span id="name">Jo Vincent</span>
 							<span>.</span>
-							<span id="blinking-cursor">|</span>
 						</h1>
 					</div>
 					<div id="brandContainer">	
