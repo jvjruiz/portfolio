@@ -25,12 +25,12 @@ export default class Projects extends Component {
 								<p>A simple tower defense game made built with Canvas using an entity component system architecture.</p>
 								<p>This project was developed over the course of 3 weeks in a group of 4. My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
 							</div>
-							<div className="projectLinks contentText">
+							<div className="projectLinkText">
 								<div className="projectLink">
-									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Github</a>
+									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Live</a>
+									<a href="gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Check It Out Live</a>
 								</div>
 							</div>
 
@@ -54,12 +54,12 @@ export default class Projects extends Component {
 								<p>Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked. This was a two person project and my role was to build the back end and debug any issues my partner was having on the front-end.
 								</p>
 							</div>
-							<div className="projectLinks contentText">
+							<div className="projectLinkText">
 								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Github</a>
+									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="gameoftowers.herokuapp.com" className="projectLinkText">Live</a>
+									<a href="gameoftowers.herokuapp.com" className="projectLinkText">Check It Out Live</a>
 								</div>
 
 							</div>
@@ -82,12 +82,12 @@ export default class Projects extends Component {
 								<p>Instant messaging app build with React and Meteor. This app was built over the course of a week as a solo project. 
 								</p>
 							</div>
-							<div className="projectLinks contentText">
+							<div className="projectLinkText">
 								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/meteor-react-chat" className="projectLinkText">Github</a>
+									<a href="https://github.com/jvjruiz/meteor-react-chat" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="https://meteor-chat-react.herokuapp.com/" className="projectLinkText">Live</a>
+									<a href="https://meteor-chat-react.herokuapp.com/" className="projectLinkText">Check It Out Live</a>
 								</div>
 							</div>
 						</div>
