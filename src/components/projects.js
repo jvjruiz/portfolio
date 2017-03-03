@@ -30,7 +30,7 @@ export default class Projects extends Component {
 									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Check It Out Live</a>
+									<a href="http://gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Check It Out Live</a>
 								</div>
 							</div>
 
@@ -59,7 +59,7 @@ export default class Projects extends Component {
 									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
-									<a href="gameoftowers.herokuapp.com" className="projectLinkText">Check It Out Live</a>
+									<a href="http://japanesex.herokuapp.com" className="projectLinkText">Check It Out Live</a>
 								</div>
 
 							</div>
