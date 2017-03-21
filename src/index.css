@@ -309,12 +309,14 @@ a:hover {
 
 #contactMe {   
   background-color: #1B2021;
+  width: 100%;
+  padding-bottom: .8em;
 }
 
 #contactMessage {
   margin:0;
   width:50%;
-  text-align: center;
+  text-align: left;
 }
 
 #contactInfo {
@@ -323,15 +325,17 @@ a:hover {
 }
 
 #contactHeader {
-    margin-top:0;
+    width:80%;
     color:#ff2052;
-    margin-bottom: 0;
     padding-top:.1em;
-    text-align: center;
+    text-align: left;
+    margin: 0 10% 0 10%;
 }
 
 #contactContent {
   display:flex;
+  width: 80%;
+  margin: 0 auto 0 auto;
 }
 
 #contactInfoList {
