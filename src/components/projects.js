@@ -19,13 +19,13 @@ export default class Projects extends Component {
 								Game of Towers
 							</div>
 							<div className="projectTechnologies contentText">
-								<p>HTML - CSS - Canvas - React - Redux</p>
+								<p>HTML | CSS | Canvas | React | Redux</p>
 							</div>
 							<div className="projectDescription contentText">
-								<p>A simple tower defense game made built with Canvas using an entity component system architecture.</p>
-								<p>This project was developed over the course of 3 weeks in a group of 4. My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
+								<p>Tower defense game made built with Canvas using an entity component system architecture.</p>
+								<p>My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
 							</div>
-							<div className="projectLinkText">
+							<div className="projectLinks">
 								<div className="projectLink">
 									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Go To Github</a>
 								</div>
@@ -47,21 +47,20 @@ export default class Projects extends Component {
 								JapaneseX
 							</div>
 							<div className="projectTechnologies contentText">
-								<p>HTML - CSS - React - Redux - MongoDB - OAuth 2.0</p>
+								<p>HTML | CSS | React | Redux | MongoDB | OAuth 2.0</p>
 							</div>
 
 							<div className="projectDescription contentText">
 								<p>Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked. This was a two person project and my role was to build the back end and debug any issues my partner was having on the front-end.
 								</p>
 							</div>
-							<div className="projectLinkText">
+							<div className="projectLinks">
 								<div className="projectLink">
 									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Go To Github</a>
 								</div>
 								<div className="projectLink">
 									<a href="http://japanesex.herokuapp.com" className="projectLinkText">Check It Out Live</a>
 								</div>
-
 							</div>
 						</div>
 					</div>
@@ -76,13 +75,13 @@ export default class Projects extends Component {
 								Meteor Chat
 							</div>
 							<div className="projectTechnologies contentText">
-								<p>HTML - CSS - Javascript - Meteor - React</p>
+								<p>HTML | CSS | Javascript | Meteor | MongoDB | React</p>
 							</div>
 							<div className="projectDescription contentText">
 								<p>Instant messaging app build with React and Meteor. This app was built over the course of a week as a solo project. 
 								</p>
 							</div>
-							<div className="projectLinkText">
+							<div className="projectLinks">
 								<div className="projectLink">
 									<a href="https://github.com/jvjruiz/meteor-react-chat" className="projectLinkText">Go To Github</a>
 								</div>

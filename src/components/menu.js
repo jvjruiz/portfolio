@@ -23,27 +23,31 @@ export default class Menu extends Component {
         smoothScroll(document.querySelector("#meteorChat"));
     }
 
+    scrollToProjects(event) {
+        event.preventDefault();
+        smoothScroll(document.querySelector("#projectsContainer"))
+    }
+
+    scrollToContact(event) {
+        event.preventDefault();
+        smoothScroll(document.querySelector("#contactMe"))
+    }
+
     render() {
         return (
-            <Dropdown>
-                <DropdownTrigger><i className="fa fa-bars fa-2x" aria-hidden="true"></i></DropdownTrigger>
-                <DropdownContent>
-                    <ul>
-                        <li>
-                            <a onClick={this.scrollToAboutMe}>About Me</a>
-                        </li>
-                        <li>
-                            <a onClick={this.scrollToTowers}>Game Of Towers</a>
-                        </li>
-                        <li>
-                            <a onClick={this.scrollToJapanese}>Japanese X</a>
-                        </li>
-                        <li>
-                            <a onClick={this.scrollToMeteor}>Meteor Chat</a>
-                        </li>
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox" />
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul id="menu">
+                        <li className="nav-item contentText" onClick={this.scrollToAboutMe}>About Me</li>
+                        <li className="nav-item contentText" onClick={this.scrollToProjects}>Projects</li>
+                        <li className="nav-item contentText" onClick={this.scrollToContact}>Contact Me</li>
                     </ul>
-                </DropdownContent>
-            </Dropdown>
+                </div>
+            </nav>
         )
     }
 };
