@@ -16,7 +16,7 @@ export default class Intro extends Component {
 						</h1>
 					</div>
 					<div id="brandContainer">	
-						<ul id="intro_icons" className="headerText">
+						<ul id="intro_icons" className="subHeaderText">
 							<li className="intro_icon">
 								Leader.				
 							</li>

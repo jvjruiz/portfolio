@@ -5,9 +5,7 @@ export default class NavBar extends Component {
 	render() {
 		return (
 			<div id="navBarContainer">
-				<div className="menuContainer">
-					<Menu />
-				</div>
+				<Menu />
 				<div id="navBarLinkContainer">
 					<ul id="navBar">
 						<li className="contactText"><a href="https://github.com/jvjruiz" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
