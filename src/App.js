@@ -5,6 +5,7 @@ import AboutMe from './components/aboutme';
 import Projects from './components/projects'  ;
 import ContactMe from './components/contactme';
 import NavBar from "./components/navbar";
+import ProjectBar from "./components/ProjectBar";
 
 export default class App extends Component {
   render() {
@@ -13,10 +14,11 @@ export default class App extends Component {
         <NavBar />
         <Intro />
         <AboutMe />
-        <Projects />
+        <ProjectBar />
         <ContactMe />
       </div>
     )
   }
 }
 
+     // <ContactMe />

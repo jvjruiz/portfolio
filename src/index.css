@@ -420,11 +420,6 @@ opacity: 1;
     width:45%;
 }
 
-.projectName {
-    color: #ff2052;
-    font-weight:bold;
-}
-
 .projectTechnologies {
     font-weight:bold;
 }
@@ -518,6 +513,40 @@ span {
 p span {
     color: #e6e6e6;
 }
+
+/* for project bar */
+
+.projectBar {
+    width:100%;
+    outline:1px solid black;
+    height: 3em;
+}
+
+.projectHeaderContainer {
+    display:flex;
+    width:80%;
+    margin: 0 auto 0 auto;
+}
+
+.projectHeaderContainer :hover {
+    background:black;
+}
+
+.projectName {
+    color: #ff2052;
+    font-weight:bold;
+    width:50%;
+}
+
+.projectDownPointer {
+    color: #ff2052;
+    font-size: 24px;
+    width:50%;
+    text-align:right;
+    padding: 1% 5% 0 0;    
+}
+
+
 
 /* for large laptops */
 @media only screen and (max-width: 1440px) {
