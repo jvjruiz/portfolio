@@ -14,7 +14,7 @@ export default class Projects extends Component {
 			gameOfTowers: {	
 				name: 'Game of Towers',
 				technologies:'HTML | CSS | Canvas | React | Redux' ,
-				description:'adsgdafg' ,
+				description:'Simple tower defense game developed using HTML5 Canvas. My responsibilities for the game were to use the A* algorithm for pathing, and building about 80% of the games engine.' ,
 				githubLink: "https://github.com/matcodesalot/creepy-walkers",
 				liveLink: "http://gameoftowers.herokuapp.com",
 				image: gameOfTowers
@@ -22,7 +22,7 @@ export default class Projects extends Component {
 			japaneseX: {	
 				name: 'Japanese X',
 				technologies:'HTML | CSS | React | Redux | MongoDB | OAuth 2.0' ,
-				description:'afadfd' ,
+				description:'A quiz app built using a spaced repetition algorithm to determine the order the questions are asked in.' ,
 				githubLink:"https://github.com/jvjruiz/spaced_repetition" ,
 				liveLink: "http://japanesex.herokuapp.com",
 				image: japaneseX
@@ -30,7 +30,7 @@ export default class Projects extends Component {
 			meteorChat: {	
 				name: 'Meteor Chat' ,
 				technologies:'HTML | CSS | Javascript | Meteor | MongoDB | React' ,
-				description:'afadf' ,
+				description:'A real time instant messaging app using React and Meteor.' ,
 				githubLink:"https://github.com/jvjruiz/meteor-react-chat"  ,
 				liveLink:"https://meteor-chat-react.herokuapp.com/" ,
 				image: meteorChat,

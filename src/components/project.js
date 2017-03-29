@@ -17,7 +17,7 @@ export default class Project extends Component {
                         </div>
                         <div className ="projectText">
                             <div className="projectTechnologies contentText">
-                                <p>{this.props.project.techologies}</p>
+                                <p>{this.props.project.technologies}</p>
                             </div>
                             <div className="projectDescription contentText">
                                {this.props.project.description} 
