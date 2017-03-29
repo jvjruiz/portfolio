@@ -37,6 +37,7 @@ export default class Projects extends Component {
 			}
 		}
 		return(
+
 			<div className='projectBarContainer'>
 				<hr />
 				<ProjectBar project = {projects.gameOfTowers} />
@@ -44,6 +45,7 @@ export default class Projects extends Component {
 				<ProjectBar project = {projects.japaneseX} />
 				<hr />
 				<ProjectBar project = {projects.meteorChat} />
+
 			</div>
 		)
 	}
