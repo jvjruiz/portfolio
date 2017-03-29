@@ -55,7 +55,7 @@ transition: color 0.3s ease;
 display: block;
 position: relative;
 top:8px;
-left:10px;
+left:45px;
 z-index: 1;
 width:5%;
 
@@ -146,7 +146,7 @@ transform: rotate(-45deg) translate(0, -1px);
 position: absolute;
 width: 300px;
 margin: -100px 0 0 -58px;
-padding: 125px 50px 50px 75px;
+padding: 125px 50px 50px 55px;
 height:100vh;
 
 background: #e6e6e6;

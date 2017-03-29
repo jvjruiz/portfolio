@@ -15,9 +15,9 @@ export default class Projects extends Component {
 						</div>
 
 						<div className ="projectText">
-							<div className="projectName subHeaderText">
+							<h3 className="projectName subHeaderText">
 								Game of Towers
-							</div>
+							</h3>
 							<div className="projectTechnologies contentText">
 								<p>HTML | CSS | Canvas | React | Redux</p>
 							</div>
@@ -43,9 +43,9 @@ export default class Projects extends Component {
 							<img src={japaneseX} className="projectImage" />
 						</div>
 						<div className ="projectText">
-							<div className="projectName subHeaderText">
+							<h3 className="projectName subHeaderText">
 								JapaneseX
-							</div>
+							</h3>
 							<div className="projectTechnologies contentText">
 								<p>HTML | CSS | React | Redux | MongoDB | OAuth 2.0</p>
 							</div>
@@ -71,9 +71,9 @@ export default class Projects extends Component {
 							<img src={meteorChat} className="projectImage" />
 						</div>
 						<div className ="projectText">
-							<div className="projectName subHeaderText">
+							<h3 className="projectName subHeaderText">
 								Meteor Chat
-							</div>
+							</h3>
 							<div className="projectTechnologies contentText">
 								<p>HTML | CSS | Javascript | Meteor | MongoDB | React</p>
 							</div>

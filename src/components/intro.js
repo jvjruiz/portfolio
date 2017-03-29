@@ -29,10 +29,7 @@ export default class Intro extends Component {
 						</ul>
 					</div>
 					<div id="scrollNotification">
-						<div>
-						Scroll down for more content
-						</div>
-						<i className="fa fa-arrow-down" aria-hidden="true"></i>
+						<i className="fa fa-chevron-down" aria-hidden="true"></i>
 					</div>	
 				</div>
 			</div>
