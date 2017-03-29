@@ -220,6 +220,7 @@ opacity: 1;
     display:inline;
     width:100%;
     height:auto;
+    padding:0;
 }
 
 #navBar > li {
@@ -398,16 +399,15 @@ opacity: 1;
 
 .projectContainer {
     width:100%;
-    height:100vh;
     display:flex;
     flex-wrap: wrap;
     margin:auto;
-    padding-bottom: 2em;
 }
 
 .projectContent {
   width:80%;
-  margin:auto;
+  margin: 0 auto;
+  padding: 1em 0;
   display:flex;
   flex-wrap:wrap;
 
@@ -419,17 +419,13 @@ opacity: 1;
     width:45%;
 }
 
-.projectName {
-    color: #ff2052;
-    font-weight:bold;
-}
-
 .projectTechnologies {
     font-weight:bold;
 }
 
 .projectLinks {
-    width:100%
+    width:100%;
+    padding-top: 3em;
 }
 
 .projectLink {
@@ -454,10 +450,11 @@ opacity: 1;
     width: 100%;
 }
 
-#contactMe {   
+#contactMe {
   background-color: #1B2021;
   width: 100%;
   padding-bottom: .8em;
+  display: inline-block;
 }
 
 #contactMessage {
@@ -471,27 +468,17 @@ opacity: 1;
   text-align: left;
 }
 
-#contactHeader {
-    width:80%;
-    color:#ff2052;
-    padding-top:.1em;
-    text-align: left;
-    margin: 0 10% 0 10%;
-}
-
 #contactContent {
   display:flex;
   width: 80%;
-  margin: 0 auto 0 auto;
+  margin: 1em auto;
   color: #e6e6e6;
 }
 
 #contactInfoList {
   width:100%;
-  margin-left: auto;
-  margin-right:auto;
+  margin: 0 auto;
   text-align: left;
-  margin-bottom: 0px;
   padding-left:0;
 }
 
@@ -510,13 +497,43 @@ opacity: 1;
     padding-right:.5em;
 }
 
-span {
-  display: block;
+.white {
+    color:white;
 }
 
 p span {
     color: #e6e6e6;
 }
+
+/* for project bar */
+
+.projectBar {
+    width:100%;
+    height: 3em;
+    display:inline-block;
+}
+
+.projectHeaderContainer {
+    display:flex;
+    width:80%;
+    margin: 0 auto 0 auto;
+}
+
+.projectName {
+    color: #ff2052;
+    font-weight:bold;
+    width:50%;
+}
+
+.projectDownPointer {
+    color: #ff2052;
+    font-size: 24px;
+    width:50%;
+    text-align:right;
+    padding: 1% 5% 0 0;    
+}
+
+
 
 /* for large laptops */
 @media only screen and (max-width: 1440px) {
@@ -628,7 +645,6 @@ p span {
 
     .projectContainer {
         width:100%;
-        height:100vh;
     }
 
     .projectText {
