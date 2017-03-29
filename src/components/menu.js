@@ -25,7 +25,7 @@ export default class Menu extends Component {
 
     scrollToProjects(event) {
         event.preventDefault();
-        smoothScroll(document.querySelector("#projectsContainer"))
+        smoothScroll(document.querySelector(".projectBarContainer"))
     }
 
     scrollToContact(event) {

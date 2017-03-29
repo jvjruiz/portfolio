@@ -8,32 +8,26 @@ export default class Project extends Component {
     }
     
     render() {
-        console.log(this.props)
         if(this.props.showing == 'true'){
             return(
-                <div className="projectContainer dark" id="gameOfTowers">
+                <div className="projectContainer" id={this.props.project.name}>
                     <div className="projectContent">
                         <div className="projectImageContainer">
-                            <img src={gameOfTowers} className="projectImage" />
+                            <img src={this.props.project.image} className="projectImage" />
                         </div>
-
                         <div className ="projectText">
-                            <div className="projectName subHeaderText">
-                                Game of Towers
-                            </div>
                             <div className="projectTechnologies contentText">
-                                <p>HTML | CSS | Canvas | React | Redux</p>
+                                <p>{this.props.project.techologies}</p>
                             </div>
                             <div className="projectDescription contentText">
-                                <p>Tower defense game made built with Canvas using an entity component system architecture.</p>
-                                <p>My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
+                               {this.props.project.description} 
                             </div>
                             <div className="projectLinks">
                                 <div className="projectLink">
-                                    <a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Go To Github</a>
+                                    <a href={this.props.project.githubLink} className="projectLink" className="projectLinkText">Go To Github</a>
                                 </div>
                                 <div className="projectLink">
-                                    <a href="http://gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Check It Out Live</a>
+                                    <a href={this.props.project.liveLink} className="projectLink" className="projectLinkText">Check It Out Live</a>
                                 </div>
                             </div>
 

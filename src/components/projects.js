@@ -1,97 +1,49 @@
 import React, {Component} from 'react';
 
-import gameOfTowers from '../assets/game-of-towers.png'
-import japaneseX from '../assets/japanesex.png'
-import meteorChat from '../assets/meteor-chat.png'
+import gameOfTowers from '../assets/game-of-towers.png';
+import japaneseX from '../assets/japanesex.png';
+import meteorChat from '../assets/meteor-chat.png';
+
+import ProjectBar from './ProjectBar';
 
 export default class Projects extends Component {
+	
+	
 	render() {
+		let projects = {
+			gameOfTowers: {	
+				name: 'Game of Towers',
+				technologies:'HTML | CSS | Canvas | React | Redux' ,
+				description:'adsgdafg' ,
+				githubLink: "https://github.com/matcodesalot/creepy-walkers",
+				liveLink: "http://gameoftowers.herokuapp.com",
+				image: gameOfTowers
+			},
+			japaneseX: {	
+				name: 'Japanese X',
+				technologies:'HTML | CSS | React | Redux | MongoDB | OAuth 2.0' ,
+				description:'afadfd' ,
+				githubLink:"https://github.com/jvjruiz/spaced_repetition" ,
+				liveLink: "http://japanesex.herokuapp.com",
+				image: japaneseX
+			},
+			meteorChat: {	
+				name: 'Meteor Chat' ,
+				technologies:'HTML | CSS | Javascript | Meteor | MongoDB | React' ,
+				description:'afadf' ,
+				githubLink:"https://github.com/jvjruiz/meteor-react-chat"  ,
+				liveLink:"https://meteor-chat-react.herokuapp.com/" ,
+				image: meteorChat,
+			}
+		}
 		return(
-			<div id="projectsContainer">
-				<div className="projectContainer dark" id="gameOfTowers">
-					<div className="projectContent">
-						<div className="projectImageContainer">
-							<img src={gameOfTowers} className="projectImage" />
-						</div>
-
-						<div className ="projectText">
-							<div className="projectName subHeaderText">
-								Game of Towers
-							</div>
-							<div className="projectTechnologies contentText">
-								<p>HTML | CSS | Canvas | React | Redux</p>
-							</div>
-							<div className="projectDescription contentText">
-								<p>Tower defense game made built with Canvas using an entity component system architecture.</p>
-								<p>My contribution to the project is about 80% of the games system, including implementing the A* algorithm for the pathing.</p> 
-							</div>
-							<div className="projectLinks">
-								<div className="projectLink">
-									<a href="https://github.com/matcodesalot/creepy-walkers" className="projectLink" className="projectLinkText">Go To Github</a>
-								</div>
-								<div className="projectLink">
-									<a href="http://gameoftowers.herokuapp.com" className="projectLink" className="projectLinkText">Check It Out Live</a>
-								</div>
-							</div>
-
-						</div>
-					</div>					
-				</div>
-				<div className="projectContainer" id="japaneseX">
-					<div className="projectContent">
-						<div className="projectImageContainer">
-							<img src={japaneseX} className="projectImage" />
-						</div>
-						<div className ="projectText">
-							<div className="projectName subHeaderText">
-								JapaneseX
-							</div>
-							<div className="projectTechnologies contentText">
-								<p>HTML | CSS | React | Redux | MongoDB | OAuth 2.0</p>
-							</div>
-
-							<div className="projectDescription contentText">
-								<p>Japanese word quiz app built with React using a spaced repetition algorithm to determine the question being asked. This was a two person project and my role was to build the back end and debug any issues my partner was having on the front-end.
-								</p>
-							</div>
-							<div className="projectLinks">
-								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/spaced_repetition" className="projectLinkText">Go To Github</a>
-								</div>
-								<div className="projectLink">
-									<a href="http://japanesex.herokuapp.com" className="projectLinkText">Check It Out Live</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div className="projectContainer dark" id="meteorChat">
-					<div className="projectContent">
-						<div className="projectImageContainer">
-							<img src={meteorChat} className="projectImage" />
-						</div>
-						<div className ="projectText">
-							<div className="projectName subHeaderText">
-								Meteor Chat
-							</div>
-							<div className="projectTechnologies contentText">
-								<p>HTML | CSS | Javascript | Meteor | MongoDB | React</p>
-							</div>
-							<div className="projectDescription contentText">
-								<p>Instant messaging app build with React and Meteor. This app was built over the course of a week as a solo project. 
-								</p>
-							</div>
-							<div className="projectLinks">
-								<div className="projectLink">
-									<a href="https://github.com/jvjruiz/meteor-react-chat" className="projectLinkText">Go To Github</a>
-								</div>
-								<div className="projectLink">
-									<a href="https://meteor-chat-react.herokuapp.com/" className="projectLinkText">Check It Out Live</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			<div className='projectBarContainer'>
+				<hr />
+				<ProjectBar project = {projects.gameOfTowers} />
+				<hr />
+				<ProjectBar project = {projects.japaneseX} />
+				<hr />
+				<ProjectBar project = {projects.meteorChat} />
 			</div>
 		)
 	}

@@ -399,11 +399,9 @@ opacity: 1;
 
 .projectContainer {
     width:100%;
-    height:100vh;
     display:flex;
     flex-wrap: wrap;
     margin:auto;
-    padding-bottom: 2em;
 }
 
 .projectContent {
@@ -450,10 +448,11 @@ opacity: 1;
     width: 100%;
 }
 
-#contactMe {   
+#contactMe {
   background-color: #1B2021;
   width: 100%;
   padding-bottom: .8em;
+  display: inline-block;
 }
 
 #contactMessage {
@@ -518,18 +517,14 @@ p span {
 
 .projectBar {
     width:100%;
-    outline:1px solid black;
     height: 3em;
+    display:inline-block;
 }
 
 .projectHeaderContainer {
     display:flex;
     width:80%;
     margin: 0 auto 0 auto;
-}
-
-.projectHeaderContainer :hover {
-    background:black;
 }
 
 .projectName {
@@ -658,7 +653,6 @@ p span {
 
     .projectContainer {
         width:100%;
-        height:100vh;
     }
 
     .projectText {

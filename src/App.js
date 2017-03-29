@@ -14,7 +14,7 @@ export default class App extends Component {
         <NavBar />
         <Intro />
         <AboutMe />
-        <ProjectBar />
+        <Projects />
         <ContactMe />
       </div>
     )

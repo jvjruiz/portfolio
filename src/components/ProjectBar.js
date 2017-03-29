@@ -24,11 +24,11 @@ export default class Projects extends Component {
 			<div className="projectBar" onClick={this.toggleShowing}>
                 <div className="projectHeaderContainer">
                     <header className="projectName headerText">
-                        Game of Towers
+                        {this.props.project.name}
                     </header>
                     <i className="fa fa-chevron-down projectDownPointer" aria-hidden="true"></i>
                 </div>
-                {this.state.showing ? <Project showing="true" /> : <Project showing="false" />}   
+                {this.state.showing ? <Project showing="true" project={this.props.project} /> : <Project showing="false" project={this.props.project} />}   
             </div>
 		)
 	}
