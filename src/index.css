@@ -7,6 +7,10 @@ html,body {
     font-family: 'Roboto', sans-serif;
 }
 
+hr {
+    margin:1em 0;
+}
+
 ul {
     list-style: none;
 }
@@ -455,6 +459,7 @@ opacity: 1;
   width: 100%;
   padding-bottom: .8em;
   display: inline-block;
+  margin-top:1em;
 }
 
 #contactMessage {
