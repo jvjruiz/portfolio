@@ -645,8 +645,8 @@ p span {
     }
 
     .projectContainer {
-        width:100%;
         display:inline-block;
+        margin-left:2em;
     }
 
     .projectContent {
@@ -702,6 +702,10 @@ p span {
     #aboutMeTextContainer {
         padding-top:1em;
         width:100%;
+    }
+
+    .projectContent {
+        padding-left:1em;
     }
 
     #projectsHeader {
