@@ -401,21 +401,20 @@ opacity: 1;
   background-color:#c0c5c1;
 }
 
-.projectContainer.active {
-    transition:opacity 1s, height .5s;
-    height:26em;
-    width:100%;
-    display:inline-block;
-    flex-wrap: wrap;
-    margin:auto;
-    opacity: 1;
-}
-
 .projectContainer.hide {
-    transition: height 1s, opacity 1s;
+    transition: height 1s ease, opacity 1s;
     height:0em;
     display:block;
     opacity:0;
+}
+
+.projectContainer.active {
+    transition: height 1s ease, opacity 1s;
+    height:26em;
+    width:100%;
+    flex-wrap: wrap;
+    margin:auto;
+    opacity: 1;
 }
 
 .projectContent {
