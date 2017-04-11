@@ -410,7 +410,6 @@ opacity: 1;
 
 .projectContainer.active {
     transition: height 1s ease, opacity 1s;
-    height:26em;
     width:100%;
     flex-wrap: wrap;
     margin:auto;
@@ -720,7 +719,7 @@ p span {
     }
 
     .projectContent {
-        padding-left:1em;
+        padding-left:3em;
     }
 
     #projectsHeader {

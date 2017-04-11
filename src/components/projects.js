@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import gameOfTowers from '../assets/game-of-towers.png';
 import japaneseX from '../assets/japanesex.png';
 import meteorChat from '../assets/meteor-chat.png';
-
+import fridgeFinder from '../assets/fridgefinder.png';
 import ProjectBar from './ProjectBar';
 
 export default class Projects extends Component {
@@ -11,6 +11,14 @@ export default class Projects extends Component {
 	
 	render() {
 		let projects = {
+			fridgeFinder: {
+				name: 'FridgeFinder',
+				technologies: 'React-Native | Redux',
+				description: 'iOS app built for finding recipes based on what you have in your fridge.',
+				githubLink: "https://github.com/jvjruiz/fridgefinder",
+				liveLink: "https://appetize.io/embed/m9nvar8d187aby4btxzdk6y930?device=iphone5s&scale=75&autoplay=false&orientation=portrait&deviceColor=black",
+				image: fridgeFinder
+		},
 			gameOfTowers: {	
 				name: 'Game of Towers',
 				technologies:'HTML | CSS | Canvas | React | Redux' ,
@@ -39,6 +47,8 @@ export default class Projects extends Component {
 		return(
 
 			<div className='projectBarContainer'>
+				<hr />
+				<ProjectBar project = {projects.fridgeFinder} />
 				<hr />
 				<ProjectBar project = {projects.gameOfTowers} />
 				<hr />
