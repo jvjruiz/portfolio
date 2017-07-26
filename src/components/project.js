@@ -8,7 +8,8 @@ export default class Project extends Component {
     }
     
     render() {
-        if(this.props.showing == 'true' && this.props.project.name == "FridgeFinder") {
+        console.log(this.props.project.name)
+        if(this.props.showing === 'true' && this.props.project.name == "FridgeFinder") {
             return (
                 <div className="projectContainer active" id={this.props.project.name}>
                     <div className="projectContent">
@@ -33,7 +34,7 @@ export default class Project extends Component {
                 </div>
             )
         }
-        else if (this.props.showing == 'false' && this.props.project.name == "FridgeFinder") {
+        else if (this.props.showing === 'false' && this.props.project.name == "FridgeFinder") {
             return (
                 <div className="projectContainer hide" id={this.props.project.name}>
                     <div className="projectContent">
@@ -51,9 +52,6 @@ export default class Project extends Component {
                                 <div className="projectLink">
                                     <a href={this.props.project.githubLink} className="projectLink" className="projectLinkText">Go To Github</a>
                                 </div>
-                                <div className="projectLink">
-                                    <a href={this.props.project.liveLink} className="projectLink" className="projectLinkText">Check It Out Live</a>
-                                </div>
                             </div>
 
                         </div>
@@ -61,7 +59,55 @@ export default class Project extends Component {
                 </div>
             )
         }
-        else if(this.props.showing == 'true'){
+        else if (this.props.showing === 'true' && this.props.project.name === "Fanboxo") {
+            return (
+                <div className="projectContainer show" id={this.props.project.name}>
+                    <div className="projectContent">
+                        <div className="projectImageContainer">
+                            <img src={this.props.project.image} className="projectImage" />
+                        </div>
+                        <div className ="projectText">
+                            <div className="projectTechnologies contentText">
+                                <p>{this.props.project.technologies}</p>
+                            </div>
+                            <div className="projectDescription contentText">
+                               {this.props.project.description} 
+                            </div>
+                            <div className="projectLinks">
+                                <div className="projectLink">
+                                    <a href={this.props.project.liveLink} className="projectLink" className="projectLinkText">Check It Out Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+        else if (this.props.showing == 'false' && this.props.project.name === "Fanboxo") {
+            return (
+                <div className="projectContainer hide" id={this.props.project.name}>
+                    <div className="projectContent">
+                        <div className="projectImageContainer">
+                            <img src={this.props.project.image} className="projectImage" />
+                        </div>
+                        <div className ="projectText">
+                            <div className="projectTechnologies contentText">
+                                <p>{this.props.project.technologies}</p>
+                            </div>
+                            <div className="projectDescription contentText">
+                               {this.props.project.description} 
+                            </div>
+                            <div className="projectLinks">
+                                <div className="projectLink">
+                                    <a href={this.props.project.liveLink} className="projectLink" className="projectLinkText">Check It Out Live</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            )
+        }
+        else if(this.props.showing === 'true'){
             return (
                 <div className="projectContainer active" id={this.props.project.name}>
                     <div className="projectContent">
@@ -87,7 +133,8 @@ export default class Project extends Component {
                         </div>
                     </div>
                 </div>
-            )}
+            )
+        }
         else {
             return(
                 <div className="projectContainer hide" id={this.props.project.name}>

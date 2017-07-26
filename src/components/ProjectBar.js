@@ -11,7 +11,6 @@ export default class Projects extends Component {
         this.toggleShowing = this.toggleShowing.bind(this)
     }
     toggleShowing() {
-        console.log(this.state)
         if(this.state.showing === false) {
             this.setState({showing:true});
         }
