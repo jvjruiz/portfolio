@@ -8,7 +8,6 @@ export default class Project extends Component {
     }
     
     render() {
-        console.log(this.props.project.name)
         if(this.props.showing === 'true' && this.props.project.name == "FridgeFinder") {
             return (
                 <div className="projectContainer active" id={this.props.project.name}>
